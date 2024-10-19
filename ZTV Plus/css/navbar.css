@@ -1,0 +1,33 @@
+.navbar {
+    background-color: #000; /* Arrière-plan noir */
+    display: flex;
+    justify-content: space-around; /* Espacement uniforme entre les icônes */
+    align-items: center; /* Centrer les icônes verticalement */
+    padding: 20px 0; /* Augmenté pour agrandir la barre de navigation */
+    position: fixed; /* Fixer la barre de navigation en bas */
+    bottom: 0; /* Positionner en bas de l'écran */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Assurez-vous que la barre est au-dessus des autres éléments */
+}
+
+.nav-icon {
+    color: #fff; /* Couleur des icônes en blanc */
+    text-decoration: none; /* Pas de soulignement */
+}
+
+.nav-icon svg {
+    fill: #fff; /* Couleur des icônes SVG */
+    width: 30px; /* Largeur des icônes agrandie */
+    height: 30px; /* Hauteur des icônes agrandie */
+}
+
+.nav-icon:hover {
+    opacity: 0.8; /* Ajoute un effet d'opacité au survol */
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        display: none; /* Masquer la barre de navigation sur les grands écrans */
+    }
+}

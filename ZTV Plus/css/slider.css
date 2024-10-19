@@ -1,0 +1,69 @@
+.anime-slider {
+  position: relative;
+  max-width: 100%; /* Ajustez la largeur maximale selon vos besoins */
+  margin: auto; /* Centre le conteneur du slider */
+  overflow: hidden; /* Cache les parties débordantes */
+}
+
+.slider-container {
+  display: flex; /* Affiche les slides en flex */
+  transition: transform 0.5s ease-in-out; /* Transition douce lors du changement de slide */
+}
+
+.slide {
+  min-width: 100%; /* Chaque slide prend toute la largeur du conteneur */
+  box-sizing: border-box; /* Inclut padding et bordure dans la largeur */
+  position: relative; /* Pour positionner le texte */
+}
+
+.slide img {
+  width: 100%; /* L'image prend toute la largeur du slide */
+  height: auto; /* Assurez-vous que l'image est proportionnelle */
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%; /* Centre les boutons verticalement */
+  width: auto;
+  padding: 16px;
+  color: white; /* Couleur du texte en blanc */
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+  border: none; /* Supprime la bordure */
+  cursor: pointer; /* Change le curseur au survol */
+  transform: translateY(-50%); /* Centre les boutons verticalement */
+  z-index: 10; /* Pour s'assurer que les boutons sont au-dessus des slides */
+}
+
+.prev {
+  left: 10px; /* Positionner à gauche */
+}
+
+.next {
+  right: 10px; /* Positionner à droite */
+}
+
+/* Styles pour le slider des dernières sorties */
+.latest-releases-slider {
+  position: relative;
+  max-width: 100%; /* Ajustez la largeur maximale selon vos besoins */
+  margin: auto; /* Centre le conteneur du slider */
+  overflow: hidden; /* Cache les parties débordantes */
+  margin-top: 20px; /* Ajoute de l'espace au-dessus du slider */
+}
+
+.latest-slider-container {
+  display: flex; /* Affiche les posters en flex */
+  transition: transform 0.5s ease-in-out; /* Transition douce lors du changement de slide */
+}
+
+.latest-slide {
+  flex: 0 0 20%; /* Chaque poster prend 20% de la largeur du conteneur */
+  box-sizing: border-box; /* Inclut padding et bordure dans la largeur */
+  padding: 10px; /* Ajoute un espacement autour de chaque poster */
+}
+
+.latest-slide img {
+  width: 100%; /* L'image prend toute la largeur du slide */
+  height: auto; /* Assurez-vous que l'image est proportionnelle */
+  border-radius: 10px; /* Ajoute un léger arrondi aux coins des images */
+}

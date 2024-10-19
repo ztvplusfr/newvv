@@ -1,0 +1,29 @@
+/* ./css/styles.css */
+@font-face {
+    font-family: 'FFF Azadliq';
+    src: url('./css/FFF_Azadliq.ttf') format('truetype'); /* Remplacez par le chemin correct de votre fichier */
+}
+
+body {
+    background-color: #000; /* Fond noir */
+    color: #fff; /* Texte blanc */
+    font-family: 'FFF Azadliq', Arial, sans-serif; /* Police par défaut */
+}
+
+h1, p {
+    margin: 20px; /* Ajoute un espacement autour des titres et paragraphes */
+}
+
+/* Styles pour les boutons */
+button {
+    background-color: #007bff; /* Fond bleu */
+    color: white; /* Texte en blanc */
+    border: none;
+    padding: 10px 20px; /* Remplissage du bouton */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en main au survol */
+}
+
+button:hover {
+    background-color: #0056b3; /* Couleur plus foncée au survol */
+}
